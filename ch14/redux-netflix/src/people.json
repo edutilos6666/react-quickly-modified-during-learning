@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "fname": "foo",
+    "lname": "bar"
+  },
+  {
+    "id": 2,
+    "fname": "leo",
+    "lname": "messi"
+  },
+  {
+    "id": 3,
+    "fname": "cris",
+    "lname": "tiano"
+  }
+]

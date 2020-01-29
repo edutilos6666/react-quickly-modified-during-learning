@@ -7,11 +7,28 @@
   <body>
     <div id="content"></div>
     <script type="text/javascript">
-      var h1 = React.createElement('h1', null, 'Hello world!')
-      ReactDOM.render(
+      var h1 = React.createElement("h1", null, "Hello world!");
+      var h2 = React.createElement("h2", null, "Hello world!");
+      var h3 = React.createElement("h3", null, "Hello world!");
+      var h4 = React.createElement("h4", null, "Hello world!");
+      var h5 = React.createElement("h5", null, "Hello world!");
+      var h6 = React.createElement("h6", null, "Hello world!");
+      var link = React.createElement(
+        "a",
+        { href: "https://www.google.com" },
+        "Google"
+      );
+      var div = React.createElement("div", null, [
         h1,
-        document.getElementById('content')
-      )
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        link
+      ]);
+
+      ReactDOM.render(div, document.getElementById("content"));
       // Usage without the h1 variable
       // ReactDOM.render(
       //   React.createElement('h1', null, 'Hello world!'),
